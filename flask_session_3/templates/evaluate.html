@@ -1,0 +1,12 @@
+{%extends "layout.html" %}
+
+{% block content%}
+<h1>Given number is {{number}}</h1>
+{%if number ==0 %}
+ <p> Neither even nor Odd</p>
+ {%elif number%2==0%}
+ <p>Number {{number}} is Even</p>
+ {%else%}
+ <p>Number {{number}} is Odd</p>
+{%endif%}
+{%endblock content%}
